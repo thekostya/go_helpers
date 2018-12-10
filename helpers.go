@@ -8,7 +8,7 @@ type Logger interface {
 	Log(keyvals ...interface{}) error
 }
 
-func defferedCloser(closer Closer, logger Logger, msg string) {
+func DefferedCloser(closer Closer, logger Logger, msg string) {
 	err := closer.Close()
 	if err != nil {
 		_ = logger.Log(
