@@ -1,1 +1,1 @@
-module go_helpers
+module github.com/thekostya/go_helpers
